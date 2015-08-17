@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Day06</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>srv02</servlet-name> <!-- srv02라는 별명을 가진 -->
+  	<servlet-class>srv.J01_srv02</servlet-class>	<!-- 이 주소를 가진 서블릿클래스 -->
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>srv02</servlet-name>	<!-- 2. 이 별명을 가진 서블릿클래스로 이동하라 -->
+  	<url-pattern>/srv02</url-pattern>	<!-- 1. / 는 들어가야함 == url에 이 url이 들어가있으면 -->
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>srv0201</servlet-name> <!-- 3번 -->
+  	<servlet-class>srv.J02_srv01</servlet-class> <!-- 4번 -->
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>srv0201</servlet-name> <!-- 2번 -->
+  	<url-pattern>/abc</url-pattern>	<!-- 1번 -->
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>srv0202</servlet-name>
+  	<servlet-class>srv.J02_srv02</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>srv0202</servlet-name>
+  	<url-pattern>/cde</url-pattern>
+  </servlet-mapping>
+</web-app>
